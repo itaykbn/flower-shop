@@ -1,3 +1,5 @@
-Flower/Flower/bin
-Flower/Flower/obj
-
+.vs
+bin
+obj
+Flower.csproj
+Flower.sln
