@@ -1,6 +1,7 @@
 .vs
-bin
-obj
-Flower.csproj
-Flower.sln
+Flower_v2/bin
+Flower_v2/obj
+Flower_v2.sln
 link_to_project.txt
+Flower_v2/Flower_v2.csproj
+

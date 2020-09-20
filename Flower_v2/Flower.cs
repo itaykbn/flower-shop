@@ -6,10 +6,43 @@ namespace Flower
 {
     public class Flower
     {
-        public string Name { get; set; }
-        public string Colour { get; set; }
-        public double Length { get; set; }
-        public string BloomTime { get; set; }
+        private string Name;
+        private string Colour;
+        private double Length;
+        private string BloomTime;
+        
+        public string GetName()
+        {
+            return Name;
+        }
+        public void SetName(string value)
+        {
+            Name = value;
+        }
+        public string GetColour()
+        {
+            return Colour;
+        }
+        public void setColour(string value)
+        {
+            Colour = value;
+        }
+        public double GetLength()
+        {
+            return Length;
+        }
+        public void setLength(double value)
+        {
+            Length = value;
+        }
+        public string GetBloomTime()
+        {
+            return BloomTime;
+        }
+        public void setBloomTime(string value)
+        {
+            BloomTime = value;
+        }
 
         // parametrized constructor 
         public Flower(string name, string colour, double length, string bloomTime)

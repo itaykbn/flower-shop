@@ -31,7 +31,7 @@ namespace Flower
 
             Console.WriteLine("");
 
-            Zer.FlowerCount = zerCount;
+            Zer.SetFlowerCount(zerCount);
 
             Zer zer1 = new Zer("for her");
             Zer zer2 = new Zer("for him");
@@ -52,7 +52,7 @@ namespace Flower
 
         private static void AddToZer(Zer zer)
         {
-            for (int i = 0; i < Zer.FlowerCount; i++)
+            for (int i = 0; i < Zer.GetFlowerCount(); i++)
             {
                 Console.WriteLine("describe your flower\n");
 
@@ -104,14 +104,14 @@ namespace Flower
         private static void PrintMaxZer(Zer zer)
         {
             string maxType = "the maximum flower";
-            Flower maxLength = zer.Flowers[0];
-            foreach (var flower in zer.Flowers)
+            Flower maxLength = zer.GetFlowers()[0];
+            foreach (var flower in zer.GetFlowers())
             {
-                if (flower.Length > maxLength.Length)
+                if (flower.GetLength() > maxLength.GetLength())
                 {
                     maxLength = flower;
                 }
-                if (flower.Length == maxLength.Length && maxLength != flower)
+                if (flower.GetLength() == maxLength.GetLength() && maxLength != flower)
                 {
                     maxType = "the maximal flower";
                 }
