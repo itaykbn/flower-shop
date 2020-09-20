@@ -111,7 +111,7 @@ namespace Flower
                 {
                     maxLength = flower;
                 }
-                if (flower.GetLength() == maxLength.GetLength() && maxLength != flower)
+                if (flower.GetLength() == maxLength.GetLength() && maxLength.Equals(flower) == false)
                 {
                     maxType = "the maximal flower";
                 }
